@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Imprima&family=Julius+Sans+One&family=K2D&display=swap");
+/* Rules to specify font families:
+font-family: 'Imprima', sans-serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'K2D', sans-serif; */
+@media only screen and (min-width: 992px) {
+  /* styles for desktop go here */
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* styles for tablet go here */
+}
+@media only screen and (max-width: 767px) {
+  /* styles for mobile go here */
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #579bb1 0%, #579bb1 35%, #e1d7c6 35%, #e1d7c6 100%);
+}
+
+header {
+  margin-top: 10px;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: flex-end;
+  align-content: center;
+  gap: 30px;
+  padding: 5px 10%;
+  font-family: "Imprima", sans-serif;
+  height: 40px;
+  list-style: none;
+  font-size: 1.15rem;
+}
+header ul a:link {
+  color: #f8f4ea;
+  text-decoration: none;
+}
+header ul a:hover {
+  transform: scale(1.2);
+}
+header ul a:visited {
+  color: #e1d7c6;
+  text-decoration: none;
+}
+header ul a:active {
+  text-decoration: underline;
+}
+header h1 {
+  color: #f8f4ea;
+  font-family: "Julius Sans One", sans-serif;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 3rem;
+}
+header img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 90px;
+  width: 250px;
+  position: relative;
+  margin-top: 30px;
+  margin: 10% auto;
+}
+
+/* .lower-half {
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+background-color: aqua;
+} */
+main {
+  color: #579bb1;
+  font-family: "K2D", sans-serif;
+  margin-top: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  max-width: 60vw;
+}
+main h2 {
+  font-size: 2em;
+}
+main p {
+  max-width: 500px;
+  margin-top: 10px;
+}
+
+footer {
+  margin-top: 20%;
+  margin-bottom: 1%;
+  font-family: "Imprima", sans-serif;
+  color: #579bb1;
+  text-align: center;
+}/*# sourceMappingURL=about_me.css.map */

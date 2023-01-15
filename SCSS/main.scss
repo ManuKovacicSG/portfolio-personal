@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Imprima&family=Julius+Sans+One&family=K2D&display=swap");
+
+/* Rules to specify font families:
+font-family: 'Imprima', sans-serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'K2D', sans-serif; */
+
+// Fonts
+$font-buttons: "Imprima", sans-serif;
+$font-titles: "Julius Sans One", sans-serif;
+$font-subtitles-paragraphs: "K2D", sans-serif;
+
+// Colors
+$lightblue-color: #579bb1;
+$brownish-color: #e1d7c6;
+$darker-white-color: #ece8dd;
+$almost-white-color: #f8f4ea;
+
+//DESKTOP
+@media only screen and (min-width: 992px) {
+    /* styles for desktop go here */
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* styles for tablet go here */
+  }
+
+  @media only screen and (max-width: 767px) {
+    /* styles for mobile go here */
+  }
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #579bb1 0%, #579bb1 35%, #e1d7c6 35%, #e1d7c6 100%,);
+
+}
+
+header {
+  margin-top: 10px;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  //align-items: center;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: flex-end;
+    align-content: center;
+    gap: 30px;
+    padding: 5px 10%;
+    font-family: $font-buttons;
+    height: 40px;
+    list-style: none;
+    font-size: 1.15rem;
+
+    a:link {
+      color: $almost-white-color;
+      text-decoration: none;
+    }
+    a:hover {
+      transform: scale(1.2);
+    }
+    a:visited {
+      color: $brownish-color;
+      text-decoration: none;
+    }
+    a:active {
+      text-decoration: underline;
+    }
+  }
+
+  h1 {
+    color: $almost-white-color;
+    font-family: $font-titles;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 90px;
+    width: 250px;
+    position: relative;
+    margin-top: 30px;
+    margin: 10% auto;
+  }
+}
+
+/* .lower-half {
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+background-color: aqua;
+} */
+
+main {
+  color: #579bb1;
+  font-family: $font-subtitles-paragraphs;
+  margin-top: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  max-width: 60vw;
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    max-width: 500px;
+    margin-top: 10px;
+  }
+}
+
+footer {
+  margin-top: 20%;
+  margin-bottom: 1%;
+  font-family: $font-buttons;
+  color: $lightblue-color;
+  text-align: center;
+}
