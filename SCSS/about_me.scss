@@ -1,1 +1,23 @@
 @use 'main'
+
+
+  @media only screen and (max-width: 767px) {
+    
+  
+
+/* Hide the navbar items by default */
+nav ul {
+    display: none;
+}
+
+/* Show the hamburger icon */
+nav .hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+/* Show the navbar items when the hamburger icon is clicked */
+nav .hamburger:active + ul {
+    display: block;
+}
+  }

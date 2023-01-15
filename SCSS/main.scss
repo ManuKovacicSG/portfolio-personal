@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Imprima&family=Julius+Sans+One&family=K2D&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+
 /* Rules to specify font families:
 font-family: 'Imprima', sans-serif;
 font-family: 'Julius Sans One', sans-serif;
@@ -25,15 +31,18 @@ $almost-white-color: #f8f4ea;
     /* styles for tablet go here */
   }
 
-  @media only screen and (max-width: 767px) {
-    /* styles for mobile go here */
-  }
+  @media (max-width: 768px) {
+    ul {
+        display: none;
+    }
 
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0;
+    .hamburger {
+        display: block;
+        position: fixed;
+        float: left;
+    }
 }
+
 
 body {
   background-image: linear-gradient(to bottom, #579bb1 0%, #579bb1 35%, #e1d7c6 35%, #e1d7c6 100%,);
@@ -46,6 +55,14 @@ header {
   display: flex;
   flex-direction: column;
   //align-items: center;
+
+  .hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    color: $brownish-color;
+    display: flex;
+    align-items: flex-end;
+}
 
   ul {
     display: flex;
